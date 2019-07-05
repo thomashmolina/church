@@ -1,0 +1,12 @@
+.float-left {
+  margin-right:10px;
+}
+.input-group{
+  margin-bottom:10px;
+}
+#helpMsg {
+  color:red !important;
+}
+.text-muted{
+  color:red;
+}

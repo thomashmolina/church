@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+  <title> 264th Ward Program </title>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type = 'text/css' href='/stylesheets/main.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src = '/admin/js/home.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">264th Ward</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/" name='program'>Program<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fhe" name='fhe'>FHE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/spotlight" aria-disabled="false" name='spotlight'>Spotlight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact" aria-disabled="false" name='contact'>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <div class='container'>
+     <div id = 'meeting-title'>
+      <h1>Provo YSA 264th Ward</h1>
+      <h2>Provo Utah YSA 7th Stake</h2>
+      <h3 id='current_date'></h3>
+     </div>
+  </div>
+  <div class='page-content'>
+    <div class='button-container'>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#programCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Sacrament
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#infoCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Information
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#schoolCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Sunday School
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#phCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Priesthood
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rsCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Relief Society
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#meetingsCollapse" aria-expanded="false" aria-controls="collapseExample" id='openButton'>
+          Other Meetings
+        </button>
+      </p>
+    </div>
+
+    <div class="collapse" id="programCollapse">
+      <div class="card card-body">
+        <div class='container' id='main-page-header'>
+         <div class='role-section'><p id='bold'>Presiding:</p><p class='role' id='presiding'></p></div>
+         <div class='role-section'><p id='bold'>Conducting:</p><p class='role' id='conducting'></p></div>
+         <div class='role-section'><p id='bold'>Pianist:</p><p class='role' id='bold'><p id='pianist'></p></div>
+         <div class='role-section'><p id='bold'>Chorister:</p><p class='role' id='chorister'></p></div>
+        </div>
+
+        <div class='container' id='main-page-schedule'>
+         <div class='event'><p id='bold'>Announcements:</p><p id='announcer'></p></div>
+         <div class='event'><p id='bold'>Opening Hymn:</p><p id='opening_hymn'></p></div>
+         <div class='event'><p id='bold'>Invocation:</p><p id='invocation'></p></div>
+         <div class='event-business'><p id='bold'>Ward Business</p></div>
+        </div>
+
+        <div class='container' id='sacrament-page-schedule'>
+         <div class='event'><p id='bold'>Sacrament Hymn:</p><p id='sacrament_hymn'></p></div>
+         <div class='event-sacrament'><p id='bold'>Administration of the Sacrament</p></div>
+        </div>
+
+        <div class='container' id='speaker-page-schedule'>
+         <div class='event'><p id='bold'>Speaker:</p><p id='speaker1'></p></div>
+         <div class='event'><p id='bold'>Speaker:</p><p id='speaker2'></p></div>
+         <div class='event'><p id='bold'>Intermediate Hymn:</p><p id='intermediate_hymn'></p></div>
+         <div class='event'><p id='bold'>Speaker:</p><p id='speaker3'></p></div>
+         <div class='event'><p id='bold'>Closing Hymn:</p><p id='closing_hymn'></p></div>
+         <div class='event'><p id='bold'>Benediction:</p><p id='benediction'></p></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="collapse" id="infoCollapse">
+
+      <div class="card card-body">
+
+        <div class='container' id='speaker-page-schedule'>
+          <div class='event box-container flexed'>
+            <p id='bold'>Sacrament meeting begins at 10:30 AM
+            in room 206 MARB on the BYU Campus
+            </p>
+
+            <div class='event'>
+              <p id='bold boxed-container flexed'>
+                We will be combined with the Provo YSA 90th ward for Sacrament Meeting,
+                and then split into our own classes during 2nd hour.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+
+    <div class="collapse" id="schoolCollapse">
+
+      <div class="card card-body">
+
+        <div class='container' id='speaker-page-schedule'>
+          <div class='event box-container flexed'><p id='bold'>"Come Follow Me" 90th ward Discussion</p>
+            <div class='event'>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B121
+              </p>
+            </div>
+          </div>
+          <div class='event box-container flexed'><p id='bold'>"Come Follow Me" 264th ward Discussion</p>
+            <div class='event'>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B112
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="collapse" id="phCollapse">
+
+      <div class="card card-body">
+
+        <div class='container' id='speaker-page-schedule'>
+          <div class='event box-container flexed'><p id='bold'>Priesthood 90th Ward</p>
+            <div class='event'>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B121
+              </p>
+            </div>
+          </div>
+          <div class='event box-container flexed'><p id='bold'>Priesthood 264th ward</p>
+            <div class='event flexed'>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B112
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="collapse" id="rsCollapse">
+
+      <div class="card card-body">
+
+        <div class='container' id='speaker-page-schedule'>
+          <div class='event box-container flexed'><p id='bold'>Relief Society 90th Ward</p>
+            <div class='event flexed'>
+              <p>
+                President:
+              </p>
+              <p>
+                1st Counselor:
+              </p>
+              <p>
+                2nd Counselor:
+              </p>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B121
+              </p>
+            </div>
+          </div>
+          <div class='event box-container flexed'><p id='bold'>Relief Society 264th ward</p>
+            <div class='event flexed'>
+              <p>
+                President:
+              </p>
+              <p>
+                1st Counselor:
+              </p>
+              <p>
+                2nd Counselor:
+              </p>
+              <p>
+                Time: 11:30 AM - 12:30 PM
+              </p>
+              <p>
+                Room: MARB B112
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="collapse" id="meetingsCollapse">
+
+      <div class="card card-body">
+
+        <div class='container' id='speaker-page-schedule'>
+          <div class='event box-container flexed'><p id='bold'>Bishopric Meeting</p>
+            <div class='event'><p>Room MARB 164</p></div>
+            <div class='event'><p>12:00 PM</p></div>
+          </div>
+          <div class='event box-container flexed'><p id='bold'>Ward Council</p>
+            <div class='event'><p>Room MARB 164</p></div>
+            <div class='event'><p>12:30 PM</p></div>
+          </div>
+          <div class='event box-container flexed'><p id='bold'>Ward Prayer</p>
+            <div class='event'><p>College Place Clubhouse</p></div>
+            <div class='event'><p>9:00 PM</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+ <div class='announcements-container'>
+
+ </div>
+
+
+  </body>
+</html>

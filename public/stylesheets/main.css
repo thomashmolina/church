@@ -1,0 +1,268 @@
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+h1{
+  width:100%;
+  text-align:center;
+  margin:5px 0px;
+}
+h2, h3 {
+  width:100%;
+  text-align:center;
+  margin:5px 0px;
+  font-size:14px;
+}
+
+#appointment{
+  width:100%;
+  text-align: center;
+}
+#bishop_calling{
+
+}
+#bishop_name {
+  margin-left:5px;
+}
+#branch_container{
+  border:2px solid #9FB9F6;
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  border-radius:8px;
+  display:flex;
+  padding:30px 30px;
+  width:800px;
+  margin-bottom:20px;
+}
+#branch_container h2 {
+  font-size:32px;
+}
+#bold {
+  font-weight:bold;
+  margin-right:10px;
+}
+#calling_title{
+  margin:0px 0px 20px 0px;
+  font-size: 24px;
+  text-align:left;
+  margin-left:10px;
+}
+#fhe_image {
+  padding:10px 0px 10px 0px;
+}
+#fhe_body {
+  padding-bottom:20px;
+}
+#meeting-title {
+  margin: 40px 0px 0px 0px;
+}
+#main-page-header{
+  width:100%;
+}
+#openButton {
+  padding:20px;
+}
+#person_name {
+  font-size: 20px;
+  font-weight:bold;
+  width:100%;
+}
+#profile_container {
+  margin-top:20px;
+}
+#programCollapse{
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  border-radius:16px;
+}
+#bis_sms {
+  color:#2E6AF3;
+  cursor:pointer;
+
+}
+.active {
+  text-decoration:underline;
+}
+.address_link {
+  display:flex;
+  justify-content: center;
+}
+.bishop {
+  background: url('/images/bishop.jpg') 100% 32% no-repeat;
+  width:350px !important;
+  height:350px !important;
+}
+.first_counselor {
+  background: url('/images/first_counselor.jpg') 50% 20% no-repeat;
+  width:350px !important;
+  height:350px !important;
+}
+.second_counselor {
+  background: url('/images/second_counselor.jpeg') 50% 50% no-repeat;
+  width:350px !important;
+  height:350px !important;
+}
+.default {
+  background: url('/images/default.png') 50% 50% no-repeat;
+}
+.contact_body {
+  padding-bottom:20px;
+}
+.calling_container {
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  border-radius:8px;
+  margin:10px;
+}
+
+.event{
+  width:100%;
+  font-size:24px;
+  display:inline-flex;
+}
+.event-sacrament{
+  font-size:32px;
+  font-weight:bold;
+  text-align:center;
+}
+.event-business{
+  font-size:28px;
+  font-weight:bold;
+}
+.extra_contact {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-top:10px;
+}
+.extra_contact p{
+  width:200px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight:lighter;
+}
+.role-section {
+  width:100%;
+  display:flex;
+  font-size:24px;
+}
+.page-content{
+  margin:50px 200px 50px 200px;
+}
+.page_title {
+  padding-bottom:20px;
+  padding-top:20px;
+}
+.profile_image {
+  width:300px;
+  height:300px;
+  border-radius:8px;
+}
+.profile {
+  display:flex;
+  width:100%;
+  border-radius:8px;
+}
+.profile_information {
+  padding:10px;
+  width:100%;
+}
+.profile_information  h1{
+  font-size:18px;
+}
+.sloth {
+  background: url('/images/astronaut_sloth.jpg') 60% 20% no-repeat;
+}
+.harambe {
+  background: url('/images/harambe.jpg') 60% 20% no-repeat;
+}
+.profile_description{
+  margin-left:10px;
+  width:100%;
+}
+.person_container{
+  display:flex;
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  padding:10px;
+  width:700px;
+  border-radius: 4px;
+  margin-top:15px;
+}
+
+.box-container {
+  padding:20px;
+  margin-top:10px;
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  color:black;
+  border-radius:16px;
+}
+.box-container-small {
+  display:flex;
+  flex-wrap:wrap;
+  padding:20px;
+  margin-top:10px;
+  box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  color:black;
+  border-radius:16px;
+}
+.calling_container{
+  display:flex;
+  width:100%;
+}
+.navbar * {
+  color:white !important;
+}
+.bg-light{
+  background-color:#2E6AF3 !important;
+}
+.card {
+  border:none;
+}
+.nav-item li:hover {
+  color:grey;
+}
+.button-container {
+  display:flex;
+  justify-content: center;
+}
+.button-container button{
+  margin: 0px 10px;
+  min-width: 125px;
+  height:100px;
+  background-color:#6490F3;
+  border-color:#6490F3;
+}
+.flexed {
+  display:flex;
+  flex-wrap:wrap;
+}
+.flexed p {
+  width:100%;
+}
+.icon-blue {
+  color:#2E6AF3;
+  cursor:pointer;
+  margin:0px 20px;
+}
+.information_icons {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  margin-bottom:20px;
+}
+.inline_elements{
+  display:flex;
+  flex-wrap:nowrap;
+  margin-bottom:0px;
+}
+.inline_elements p{
+  margin:0px 5px;
+}
+.title_name {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width:100%;
+}
+.title_name h1{
+  width:auto;
+  font-size:1.6em;
+}

@@ -1,0 +1,35 @@
+.adm-title{
+  margin:20px 0px;
+}
+.colon {
+  display:flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight:bold;
+}
+.invalid_feedback{
+  display:none;
+  color:red;
+}
+.valid_feedback{
+  display:none;
+  color:green;
+}
+.navbar {
+background-color:#2E6AF3 !important;
+}
+.navbar > a {
+  background-color:#2E6AF3 !important;
+  color:white !important;
+}
+.navbar li > a {
+  background-color:#2E6AF3 !important;
+  color:white !important;
+}
+.navbar > a:hover{
+  text-decoration: underline;
+}
+.nav-link:hover {
+  text-decoration: underline;
+
+}
